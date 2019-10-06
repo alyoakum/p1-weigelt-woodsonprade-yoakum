@@ -41,6 +41,7 @@ h2 {
   font-weight: 800;
   text-transform: lowercase;
   color: #583574;
+  text-transform: uppercase;
 }
 
 p {
@@ -49,3 +50,33 @@ p {
   font-weight: 400;
   color: #10001e;
 }
+
+/* Team & Gallery Grid */
+
+main {
+  padding: 5% 0;
+}
+
+.grid-structure {
+  text-align: center;
+}
+
+.page-heading {
+  padding-bottom: 3%;
+}
+
+.img-description {
+  padding: 3% 0 10% 0;
+}
+
+/* ----------------- START 768PX MEDIA QUERY ----------------- */
+
+@media (min-width:768px) {
+
+.page-heading {
+  text-align: left;
+}
+
+}
+
+/* ----------------- END 768PX MEDIA QUERY ----------------- */
