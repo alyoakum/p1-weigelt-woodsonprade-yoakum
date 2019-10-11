@@ -16,10 +16,12 @@
 .navbar {
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
    padding-right: 8px;
+/*--------------------------------------Nesting------------------------*/
    img {
      width: 55px;
      display: inline-block;
    }
+   /*--------------------------------------Nesting End------------------------*/
 }
 
 .navbar-brand {
@@ -52,9 +54,11 @@ header, contact-container, main {
 .container-fluid {
   padding: 2rem;
   text-align: center;
+  /*--------------------------------------Nesting------------------------*/
   img {
     max-width: 200px;
   }
+  /*--------------------------------------Nesting End------------------------*/
 }
 
 .col-sm {
@@ -63,9 +67,11 @@ header, contact-container, main {
 
 /* Text Styles */
 h1, h2 {
+  /*--------------------------------------Mixin------------------------*/
   .font-styles();
   padding-top:5%;
 }
+/*--------------------------------------Mixin End------------------------*/
 
 p {
   font-family: 'Raleway', sans-serif;
@@ -106,15 +112,9 @@ main {
 }
 
 .footer {
-  background-color: @secondary-purple;
-  padding: 20px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: @secondary-purple;
-  color: @white;
-  text-align: center;
-  display: inline-block;
+  /*--------------------------------------Mixin------------------------*/
+  .footer-styles()
+  /*--------------------------------------Mixin End------------------------*/
   img {
     padding: 0px 10px 0px 10px;
     width: 60px;
@@ -125,15 +125,19 @@ main {
 .schedule {
   margin-top: 5%;
   margin-bottom: 5%;
+  /*--------------------------------------Nesting------------------------*/
   img {
     padding: 5%;
   }
+  /*--------------------------------------Nesting End------------------------*/
 }
+/*--------------------------------------Nesting------------------------*/
 .sponsors {
   img {
     max-width: 350px;
   }
 }
+/*--------------------------------------Nesting End------------------------*/
 iframe {
   padding:2%;
 }
@@ -192,9 +196,7 @@ label {
 .form-control {
   background-color: #fcfcfc;
 }
-
 /* ----------------- START 1150PX MEDIA QUERY ----------------- */
-
 @media (min-width:1150px) {
 .contact-container {
   width: 1200px;
@@ -208,5 +210,4 @@ label {
   margin-top: 80px;
 }
 }
-
 /* ----------------- END 1150PX MEDIA QUERY ----------------- */
