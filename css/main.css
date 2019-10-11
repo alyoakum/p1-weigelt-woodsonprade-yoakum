@@ -14,6 +14,10 @@
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
+/* Header */
+header, contact-container, main {
+  margin-top: 95px;
+}
 /* Button */
 .btn-primary {
   background-color: #583574;
