@@ -1,7 +1,7 @@
 /* Carousel */
 .carousel-item {
   width: 100%;
-  height: 450px;
+  height: 275px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,11 +12,19 @@
 /* Nav */
 .navbar {
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+   padding-right: 8px;
 }
 
+.navbar-brand {
+  font-size: 15px;
+}
+.navbar img {
+  width: 55px;
+  display: inline-block;
+}
 /* Styles for main body */
 header, contact-container, main {
-  margin-top: 95px;
+  margin-top: 50px;
 }
 
 .jumbotron {
@@ -25,7 +33,7 @@ header, contact-container, main {
   background-position: top center;
   height: 250px;
   width:100%;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 /* Button */
@@ -33,10 +41,18 @@ header, contact-container, main {
   background-color: #583574;
   border: none;
 }
+
+.btn-primary:hover{
+  background-color: #9B94AD;
+}
 /* Container */
 .container-fluid {
-  margin: 2rem;
+  padding: 2rem;
   text-align: center;
+}
+
+.col-sm {
+  padding-bottom: 20px;
 }
 
 /* Text Styles */
@@ -115,12 +131,21 @@ main {
 
 @media (min-width:768px) {
 
+.carousel-item {
+  height: 400px;
+}
 .page-heading {
   text-align: left;
 }
 .jumbotron {
   height: 380px;
-  margin-top: 100px;
+  margin-top: 70px;
+}
+.navbar img {
+  visibility: visible;
+}
+.navbar-brand {
+  font-size: 22px;
 }
 }
 
@@ -162,9 +187,12 @@ label {
   width: 1200px;
   margin: 0 auto;
 }
+.carousel-item {
+  height:500px;
+}
 .jumbotron {
   height: 500px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 }
 
