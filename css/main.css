@@ -14,8 +14,8 @@
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
-/* Header */
-header, contact-container, main {
+/* Styles for main body */
+header, contact-container, main, .jumbotron {
   margin-top: 95px;
 }
 /* Button */
@@ -23,7 +23,13 @@ header, contact-container, main {
   background-color: #583574;
   border: none;
 }
-
+.jumbotron {
+  background: url('../images/about-jumbotron-img.png') no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 470px;
+  width:100%;
+}
 /* Container */
 .container-fluid {
   margin: 2rem;
@@ -73,6 +79,24 @@ main {
 
 .img-description {
   padding: 3% 0 10% 0;
+}
+
+.footer {
+  background-color: #9B94AD;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9B94AD;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer img {
+  padding: 0px 10px 0px 10px;
+  width: 60px;
+  height: auto;
 }
 
 /* ----------------- START 768PX MEDIA QUERY ----------------- */
