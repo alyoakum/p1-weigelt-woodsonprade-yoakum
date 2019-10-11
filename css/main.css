@@ -15,20 +15,23 @@
 }
 
 /* Styles for main body */
-header, contact-container, main, .jumbotron {
+header, contact-container, main {
   margin-top: 95px;
 }
-/* Button */
-.btn-primary {
-  background-color: #583574;
-  border: none;
-}
+
 .jumbotron {
   background: url('../images/about-jumbotron-img.png') no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 470px;
+  height: 250px;
   width:100%;
+  margin-top: 120px;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #583574;
+  border: none;
 }
 /* Container */
 .container-fluid {
@@ -63,6 +66,14 @@ p {
 
 /* Site-Wide Styles */
 
+.logo {
+  float: right;
+  width: 50%;
+  height: auto;
+  max-width: 350px;
+  min-width: 75px;
+  padding: 20px 0px 25px 20px;
+}
 main {
   padding: 5% 0;
 }
@@ -99,6 +110,7 @@ main {
   height: auto;
 }
 
+
 /* ----------------- START 768PX MEDIA QUERY ----------------- */
 
 @media (min-width:768px) {
@@ -106,7 +118,10 @@ main {
 .page-heading {
   text-align: left;
 }
-
+.jumbotron {
+  height: 380px;
+  margin-top: 100px;
+}
 }
 
 /* ----------------- END 768PX MEDIA QUERY ----------------- */
@@ -147,7 +162,10 @@ label {
   width: 1200px;
   margin: 0 auto;
 }
-
+.jumbotron {
+  height: 500px;
+  margin-top: 100px;
+}
 }
 
 /* ----------------- END 1150PX MEDIA QUERY ----------------- */
